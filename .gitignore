@@ -6,8 +6,6 @@ bin/
 /logs/
 /modules
 /project/project
-/project/target
-/target
 tmp/
 test-result
 server.pid
@@ -15,3 +13,16 @@ server.pid
 *.eml
 /dist/
 .cache
+/.idea
+/out
+/.idea_modules
+
+target
+tmp
+.history
+dist
+/.classpath
+/.project
+/RUNNING_PID
+/.settings
+
