@@ -22,7 +22,8 @@ class GameOfLife(val clusters: Int, val clusterSize: Int) {
 
   private def randomCell(center: Cell) = center + new Cell(Random.nextInt(dc * 2) - dc, Random.nextInt(dc * 2) - dc)
 
-  private def seedCells = (for (i <- 0 until clusters; cell <- generateCellsInCluster(randomCluster)) yield cell).toSet
+  private def seedCells = (for (i <- 0 until clusters; cell <- generateCellsInCluster(randomCluster)) yield cell).toSet ++
+    generateCellsInCluster(new Cell(0, 0))
 
   private def randomCluster = new Cell(randomCoord, randomCoord)
 

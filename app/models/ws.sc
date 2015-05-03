@@ -1,8 +1,11 @@
-import models.GameOfLife$
+import models.GameOfLife
+import models._
 
-val field = new GameOfLife(1, 100)
+val field = new GameOfLife(1, 10)
 field.getGenerationNumber
 field.getGenerationsAlive
+
+jsonize(field)
 
 field.advance()
 
